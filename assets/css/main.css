@@ -1,0 +1,113 @@
+body {
+    /*overflow: hidden;*/
+    background-color:  hsl(217, 54%, 11%);
+
+}
+
+.img{
+    padding: 20px;
+    border-radius: 30px;
+
+
+}
+.img-block {
+    position: relative;
+}
+
+.view-block {
+    background-color: hsl(178, 100%, 50%, 50%);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.view-block:hover {
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.view-block img {
+    position: absolute;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-nft {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.img-nft::after {
+    content: url(../img/icon-view.svg);
+    background: var(--cor2);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bold{
+    color: antiquewhite;
+    font-weight: 600;
+    font-size: 20px;
+}
+.bold:hover{
+    color:hsl(178, 100%, 50%); ;
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+     border-radius: 20px;
+     margin-left: 40%;
+     margin-top: 90px;
+     box-shadow:inset hsl(215, 51%, 70%);
+    
+}
+.card-text{
+    color: darkgray;
+}
+.paragrap1{
+    color:hsl(178, 100%, 50%);
+    font-weight: 600;
+    margin-right: 50px;
+}
+.paragrap2{
+    color: darkgrey;
+}
+.flex-lg-row{
+    display: flex;
+    flex-direction: row;
+}
+.div1,.div2{
+    display: flex;
+}
+hr{
+    background-color: rgb(131, 181, 189);
+    width: 90%;
+    height: .1px;
+
+}
+p{
+    color: darkgray;
+}
+.p{
+    margin-left: 10px;
+}
+.p:hover{
+    color: hsl(178, 100%, 50%);
+}
+.ss{
+    height: 30px;
+    width:30px; 
+    margin-right: 10px;
+    border:5px soild white;
+}
+@media (max-width:750px) {
+    .card{
+        margin-left: 15%;
+    }
+}
